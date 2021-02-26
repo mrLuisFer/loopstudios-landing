@@ -6,4 +6,9 @@
   --black: hsl(0, 0%, 0%);
   --darkGray: hsl(0, 0%, 55%);
   --veryDarkGray: hsl(0, 0%, 41%);
+  // Properties
+  font-size: 15px;
 }
+
+$mobile: 375px;
+$desk: 1024px;

@@ -1,0 +1,7 @@
+@mixin layout {
+  padding: 40px 20px;
+
+  @media (min-width: $desk) {
+    padding: 40px;
+  }
+}

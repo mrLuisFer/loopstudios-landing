@@ -1,0 +1,12 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  &__links {
+    display: none;
+
+    @media (min-width: $desk) {
+      display: block;
+    }
+  }
+}
