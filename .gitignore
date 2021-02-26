@@ -132,8 +132,6 @@ Temporary Items
 *.sass.map
 *.scss.map
 
-### Stylus ###
-*.css
 
 ### Vim ###
 # Swap
