@@ -1,0 +1,24 @@
+.article {
+  @include layout;
+  padding-top: 5rem;
+
+  &__img {
+    display: block;
+    width: 330px;
+    margin: 1rem auto;
+  }
+
+  &__title {
+    @include title;
+  }
+
+  &__text {
+    text-align: center;
+    font-family: var(--font-alata);
+    color: var(--veryDarkGray);
+    padding-top: 1.2rem;
+    width: 300px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+}

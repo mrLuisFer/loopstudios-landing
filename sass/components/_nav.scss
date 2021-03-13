@@ -2,6 +2,14 @@
   display: flex;
   justify-content: space-between;
 
+  &__logo {
+    width: 120px;
+  }
+
+  &__burguer {
+    width: 1.7rem;
+  }
+
   &__links {
     display: none;
 

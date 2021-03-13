@@ -1,0 +1,53 @@
+.our-creations {
+  @include layout;
+
+  &__flex {
+    @media (max-width: $desk) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__title {
+    @include title;
+    margin-bottom: 3rem;
+  }
+
+  // Se all Button
+  &__text {
+    padding: 0.7rem 2rem;
+    border: 2px solid var(--black);
+    display: block;
+    line-height: 1;
+    text-align: center;
+    margin: 1rem auto;
+    margin-top: 2rem;
+    width: 120px;
+  }
+
+  &__card-flex {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  &__card {
+    padding-top: 5rem;
+    padding-left: 1.5rem;
+    text-transform: uppercase;
+    color: var(--white);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 140px;
+    box-shadow: inset 0px 0px 150px 0px rgba(#000000, 0.6);
+
+    p {
+      width: 125px;
+      font-size: 1.5rem;
+      letter-spacing: 0.8px;
+    }
+  }
+}
+
+@import "./our-creations-cards";
