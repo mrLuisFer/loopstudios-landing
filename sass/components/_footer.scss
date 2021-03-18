@@ -2,4 +2,36 @@
   @include layout;
   background: var(--black);
   color: var(--white);
+
+  &__logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__links {
+    margin-top: 2rem;
+    text-align: center;
+    font-family: var(--font-alata);
+    font-weight: 400;
+    font-size: 1.2rem;
+
+    p {
+      margin-bottom: 1.7rem;
+    }
+  }
+
+  &__img {
+    margin-top: 3.4rem;
+    &-flex {
+      display: flex;
+      justify-content: center;
+      column-gap: 1rem;
+      align-items: center;
+    }
+
+    &__text {
+      text-align: center;
+      margin-top: 1.6rem;
+    }
+  }
 }

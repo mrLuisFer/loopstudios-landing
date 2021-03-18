@@ -4,10 +4,27 @@
 
   &__logo {
     width: 120px;
+    position: relative;
+    z-index: 13;
   }
 
   &__burguer {
     width: 1.7rem;
+    position: relative;
+    z-index: 13;
+
+    @media (min-width: $desk) {
+      display: none;
+    }
+  }
+
+  &__close {
+    position: relative;
+    z-index: 13;
+
+    @media (min-width: $desk) {
+      display: none;
+    }
   }
 
   &__links {
@@ -17,4 +34,18 @@
       display: block;
     }
   }
+}
+
+// Dynamic Class
+
+.dBlock {
+  display: block;
+  position: relative;
+  z-index: 13;
+}
+
+.dNone {
+  display: none;
+  position: relative;
+  z-index: 13;
 }

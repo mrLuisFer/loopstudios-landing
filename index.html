@@ -18,12 +18,13 @@
 
 <!-- @APP -->
 
-<body>
+<body id='body'>
   <main class="main">
     <header class="header">
       <nav class="nav">
-        <img src="./images/logo.svg" alt="logo" class="nav__logo">
-        <img src="./images/icon-hamburger.svg" alt="hamburger" class="nav__burguer">
+        <img src="./images/logo.svg" alt="logo" class="nav__logo" />
+        <img src="./images/icon-hamburger.svg" alt="hamburger" class="nav__burguer" id='burguer' />
+        <img src="./images/icon-close.svg" alt="icon-close" class="nav__close dNone" id="close" />
         <div class="nav__links">
           <a href="/"> About </a>
           <a href="/"> Careers </a>
@@ -32,10 +33,15 @@
           <a href="/"> Support </a>
         </div>
       </nav>
-
       <h2 class="header__title">Immersive experiences that deliver</p>
     </header>
-
+    <div class="menu-mobile dNone" id='menu-mobile'>
+      <a href="/"> About </a> <br />
+      <a href="/"> Careers </a> <br />
+      <a href="/"> Events </a> <br />
+      <a href="/"> Products </a> <br />
+      <a href="/"> Support </a> <br />
+    </div>
     <article class="article">
       <img src="./images/mobile/image-interactive.jpg" alt="interactive" class="article__img" />
       <h1 class="article__title">The leader in interactive VR</h1>
@@ -83,18 +89,37 @@
     </article>
 
     <footer class="footer">
-      <img class="footer__logo" src="./images/logo.svg" alt="logo alternative">
-      <div class="footer__links">
-        <p>About</p>
-        <p>Careers</p>
-        <p>Events</p>
-        <p>Products</p>
-        <p>Support</p>
+      <div class="footer__content">
+        <img class="footer__logo" src="./images/logo.svg" alt="logo alternative">
+        <div class="footer__links">
+          <p>About</p>
+          <p>Careers</p>
+          <p>Events</p>
+          <p>Products</p>
+          <p>Support</p>
+        </div>
       </div>
 
-      <p class="footer__text">© 2021 Loopstudios. All rights reserved.</p>
+      <div class="footer__img">
+        <div class="footer__img-flex">
+          <a href="/">
+            <img src="./images/icon-facebook.svg" alt="facebook icon">
+          </a>
+          <a href="/">
+            <img src="./images/icon-twitter.svg" alt="twitter icon">
+          </a>
+          <a href="/">
+            <img src="./images/icon-pinterest.svg" alt="pinterest icon">
+          </a>
+          <a href="/">
+            <img src="./images/icon-instagram.svg" alt="instagram icon">
+          </a>
+        </div>
+        <p class="footer__img__text">© 2021 Loopstudios. All rights reserved.</p>
+      </div>
     </footer>
   </main>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
