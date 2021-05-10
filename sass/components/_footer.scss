@@ -9,6 +9,10 @@
     align-items: center;
   }
 
+  @media (min-width: $xxl) {
+    margin-top: 10rem;
+  }
+
   &__logo {
     display: block;
     margin: 0 auto;

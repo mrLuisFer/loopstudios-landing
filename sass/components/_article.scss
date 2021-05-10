@@ -24,6 +24,10 @@
         display: block;
         width: 600px;
       }
+
+      @media (min-width: $xxl) {
+        width: 700px;
+      }
     }
 
     &-text {
@@ -35,16 +39,23 @@
         width: 500px;
         padding: 4.5rem;
       }
+
+      @media (min-width: $xxl) {
+        bottom: 0;
+        right: 20%;
+      }
     }
   }
 
   &__title {
     @include title;
 
-    font-size: 2.5rem;
-    width: 100%;
-    margin-top: 0;
-    text-align: left;
+    @media (min-width: $desk) {
+      font-size: 2.5rem;
+      width: 100%;
+      margin-top: 0;
+      text-align: left;
+    }
   }
 
   &__text {
@@ -60,6 +71,10 @@
       width: 100%;
       text-align: left;
       font-size: 0.83rem;
+    }
+
+    @media (min-width: $xxl) {
+      font-size: 0.9rem;
     }
   }
 }

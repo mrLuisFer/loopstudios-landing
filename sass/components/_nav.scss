@@ -6,6 +6,10 @@
     width: 120px;
     position: relative;
     z-index: 13;
+
+    @media (min-width: $xxl) {
+      width: 170px;
+    }
   }
 
   &__burguer {
@@ -39,6 +43,12 @@
         color: var(--white);
         font-family: var(--font-alata);
         font-weight: 500;
+
+        @include textUnderline;
+
+        @media (min-width: $xxl) {
+          font-size: 1.5rem;
+        }
       }
     }
   }
