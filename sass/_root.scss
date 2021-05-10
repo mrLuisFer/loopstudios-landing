@@ -12,7 +12,8 @@
   --veryDarkGray: hsl(0, 0%, 41%);
   // Properties
   font-size: 15px;
+  --transition: 0.2s ease;
 }
 
 $mobile: 375px;
-$desk: 1024px;
+$desk: 1000px;

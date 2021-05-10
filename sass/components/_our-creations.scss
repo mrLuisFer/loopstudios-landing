@@ -8,27 +8,53 @@
     }
   }
 
+  &__titleContainer {
+    @media (min-width: $desk) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
   &__title {
     @include title;
     margin-bottom: 3rem;
+
+    @media (min-width: $desk) {
+      margin: 3rem 0;
+    }
+
+    &__seeAllBtn {
+      display: none;
+
+      @media (min-width: $desk) {
+        @include seAllBtn;
+        height: 100%;
+        display: block;
+        margin: 0;
+      }
+    }
   }
 
   // Se all Button
   &__text {
-    padding: 0.7rem 2rem;
-    border: 2px solid var(--black);
+    @include seAllBtn;
     display: block;
-    line-height: 1;
-    text-align: center;
-    margin: 1rem auto;
-    margin-top: 2rem;
-    width: 120px;
+    @media (min-width: $desk) {
+      display: none;
+    }
   }
 
   &__card-flex {
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
+
+    @media (min-width: $desk) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
   }
 
   &__card {
@@ -42,10 +68,21 @@
     height: 140px;
     box-shadow: inset 0px 0px 150px 0px rgba(#000000, 0.6);
 
+    @media (min-width: $desk) {
+      height: 400px;
+      width: 190px;
+      display: flex;
+    }
+
     p {
       width: 125px;
       font-size: 1.5rem;
       letter-spacing: 0.8px;
+
+      @media (min-width: $desk) {
+        align-self: flex-end;
+        margin-bottom: 2rem;
+      }
     }
   }
 }

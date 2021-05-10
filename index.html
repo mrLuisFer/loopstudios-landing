@@ -43,21 +43,29 @@
       <a href="/"> Support </a> <br />
     </div>
     <article class="article">
-      <img src="./images/mobile/image-interactive.jpg" alt="interactive" class="article__img" />
-      <h1 class="article__title">The leader in interactive VR</h1>
-      <p class="article__text">
-        Founded in 2011, Loopstudios has been producing world-class virtual
-        reality projects for some of the best companies around the globe. Our
-        award-winning creations have transformed businesses through digital
-        experiences that bind to their brand.
-      </p>
+      <div class="article__content-img">
+        <img src="./images/mobile/image-interactive.jpg" alt="interactive" class="article__img" />
+      </div>
+     <div class="article__content-text">
+       <h1 class="article__title">The leader in interactive VR</h1>
+       <p class="article__text">
+         Founded in 2011, Loopstudios has been producing world-class virtual
+         reality projects for some of the best companies around the globe. Our
+         award-winning creations have transformed businesses through digital
+         experiences that bind to their brand.
+        </p>
+      </div>
     </article>
 
     <article class="our-creations">
       <div class="our-creations__container-flex">
-        <h1 class="our-creations__title">Our creations</h1>
+        <div class="our-creations__titleContainer">
+          <h1 class="our-creations__title">Our creations</h1>
+          <p class="our-creations__title__seeAllBtn seeAllDesk" id='btn-SeeAll'>See all</p>
+        </div>
+        
         <div class="our-creations__flex">
-          <p class="our-creations__text">See all</p>
+          <p class="our-creations__text seeAllMobile" id='btn-SeeAll'>See all</p>
           <section class="our-creations__card-flex">
             <div class="our-creations__card earth">
               <p>Deep earth</p>
@@ -92,11 +100,11 @@
       <div class="footer__content">
         <img class="footer__logo" src="./images/logo.svg" alt="logo alternative">
         <div class="footer__links">
-          <p>About</p>
-          <p>Careers</p>
-          <p>Events</p>
-          <p>Products</p>
-          <p>Support</p>
+          <a href="/">About</a>
+          <a href="/">Careers</a>
+          <a href="/">Events</a>
+          <a href="/">Products</a>
+          <a href="/">Support</a>
         </div>
       </div>
 

@@ -4,6 +4,9 @@
 
   @media (min-width: $desk) {
     background-image: url("../../images/desktop/image-hero.jpg");
+    background-size: contain;
+
+    height: 400px;
   }
   padding-bottom: 16rem;
 
@@ -16,5 +19,10 @@
     font-weight: 300;
     line-height: 1;
     text-transform: uppercase;
+
+    @media (min-width: $desk) {
+      width: 400px;
+      margin-top: 7rem;
+    }
   }
 }

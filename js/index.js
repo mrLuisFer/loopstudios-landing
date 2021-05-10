@@ -1,11 +1,14 @@
 "use strict"
 
-let iconBurguer = document.querySelector("#burguer")
-let iconClose = document.querySelector("#close")
-let body = document.querySelector("#body")
-let menuMobile = document.querySelector("#menu-mobile")
+const iconBurguer = document.querySelector("#burguer")
+const iconClose = document.querySelector("#close")
+const body = document.querySelector("#body")
+const menuMobile = document.querySelector("#menu-mobile")
 
-iconBurguer.addEventListener("click", function () {
+const btnSeeAll = document.querySelector("#btn-SeeAll")
+
+// Open the menu
+iconBurguer.addEventListener("click", () => {
   console.log("click")
 
   body.classList.add("noOverflow")
@@ -16,11 +19,16 @@ iconBurguer.addEventListener("click", function () {
   body.classList.remove("yesOverflow")
 })
 
-iconClose.addEventListener("click", function () {
+// Close the menu
+iconClose.addEventListener("click", () => {
   body.classList.remove("noOverflow")
   iconBurguer.classList.remove("dNone")
 
   iconClose.classList.add("dNone")
   menuMobile.classList.add("dNone")
   body.classList.add("yesOverflow")
+})
+
+btnSeeAll.addEventListener("click", () => {
+  window.scrollTo(0, 0)
 })

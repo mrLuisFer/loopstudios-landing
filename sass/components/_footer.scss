@@ -3,30 +3,67 @@
   background: var(--black);
   color: var(--white);
 
+  @media (min-width: $desk) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   &__logo {
     display: block;
     margin: 0 auto;
+
+    @media (min-width: $desk) {
+      margin: 0;
+    }
   }
 
   &__links {
     margin-top: 2rem;
     text-align: center;
-    font-family: var(--font-alata);
     font-weight: 400;
     font-size: 1.2rem;
 
-    p {
+    @media (min-width: $desk) {
+      text-align: left;
+      display: flex;
+      align-items: center;
+      column-gap: 2rem;
+    }
+
+    a {
       margin-bottom: 1.7rem;
+      font-family: var(--font-alata);
+      text-decoration: none;
+      color: var(--white);
+      display: block;
+
+      @media (min-width: $desk) {
+        display: inline;
+        font-size: 0.95rem;
+        transition: var(--transition);
+
+        @include textUnderline;
+      }
     }
   }
 
   &__img {
     margin-top: 3.4rem;
+
+    @media (min-width: $desk) {
+      margin: 0;
+    }
+
     &-flex {
       display: flex;
       justify-content: center;
       column-gap: 1rem;
       align-items: center;
+
+      @media (min-width: $desk) {
+        justify-content: flex-end;
+      }
     }
 
     &__text {

@@ -1,0 +1,8 @@
+@mixin textUnderline {
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2.5px;
+    text-decoration-style: solid;
+    text-decoration-color: var(--white);
+  }
+}

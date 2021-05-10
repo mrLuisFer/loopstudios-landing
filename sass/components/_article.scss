@@ -2,14 +2,49 @@
   @include layout;
   padding-top: 5rem;
 
+  @media (min-width: $desk) {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+  }
+
   &__img {
     display: block;
     width: 330px;
     margin: 1rem auto;
+
+    @media (min-width: $desk) {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    &-img {
+      @media (min-width: $desk) {
+        display: block;
+        width: 600px;
+      }
+    }
+
+    &-text {
+      @media (min-width: $desk) {
+        position: absolute;
+        background: var(--white);
+        right: 0;
+        bottom: 0;
+        width: 500px;
+        padding: 4.5rem;
+      }
+    }
   }
 
   &__title {
     @include title;
+
+    font-size: 2.5rem;
+    width: 100%;
+    margin-top: 0;
+    text-align: left;
   }
 
   &__text {
@@ -20,5 +55,11 @@
     width: 300px;
     margin: 0 auto;
     line-height: 1.7;
+
+    @media (min-width: $desk) {
+      width: 100%;
+      text-align: left;
+      font-size: 0.83rem;
+    }
   }
 }

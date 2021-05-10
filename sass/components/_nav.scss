@@ -31,7 +31,15 @@
     display: none;
 
     @media (min-width: $desk) {
-      display: block;
+      display: flex;
+      column-gap: 2rem;
+
+      a {
+        text-decoration: none;
+        color: var(--white);
+        font-family: var(--font-alata);
+        font-weight: 500;
+      }
     }
   }
 }
