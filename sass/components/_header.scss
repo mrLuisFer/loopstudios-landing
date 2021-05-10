@@ -1,10 +1,10 @@
 .header {
   @include layout;
-  background-image: url("../../images/mobile/image-hero.jpg");
+  background-image: url("../../public/images/mobile/image-hero.jpg");
   background-size: cover;
 
   @media (min-width: $desk) {
-    background-image: url("../../images/desktop/image-hero.jpg");
+    background-image: url("../../public/images/desktop/image-hero.jpg");
     background-size: contain;
 
     height: 400px;
