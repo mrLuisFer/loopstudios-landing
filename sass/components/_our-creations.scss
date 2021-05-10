@@ -73,6 +73,11 @@
     background-size: cover;
     height: 140px;
     box-shadow: inset 0px 0px 150px 0px rgba(#000000, 0.6);
+    transition: var(--transition);
+
+    &:hover {
+      transform: scale(1.05);
+    }
 
     @media (min-width: $desk) {
       height: 400px;

@@ -16,6 +16,7 @@
   &__logo {
     display: block;
     margin: 0 auto;
+    cursor: pointer;
 
     @media (min-width: $desk) {
       margin: 0;

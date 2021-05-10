@@ -7,6 +7,8 @@ const menuMobile = document.querySelector("#menu-mobile")
 
 const btnSeeAll = document.querySelector("#btn-SeeAll")
 
+const footerLogo = document.querySelector("#footer-logo")
+
 // Open the menu
 iconBurguer.addEventListener("click", () => {
   console.log("click")
@@ -30,5 +32,9 @@ iconClose.addEventListener("click", () => {
 })
 
 btnSeeAll.addEventListener("click", () => {
+  window.scrollTo(0, 0)
+})
+
+footerLogo.addEventListener("click", () => {
   window.scrollTo(0, 0)
 })
